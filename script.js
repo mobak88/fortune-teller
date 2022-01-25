@@ -2,7 +2,7 @@ const chrystallBallImg = document.getElementById('chrystal-ball');
 const userNameSubmitBtn = document.querySelector('.user-name__submit');
 const fortuneCardContainer = document.querySelector('.card__container');
 const userFortune = document.querySelector('.card__paragraph');
-const userName = document.querySelector('.user-name__input').textContent;
+const userName = document.querySelector('.user-name__input');
 
 const userNameContainer = document.querySelector(
     '.user-name__container--hidden'
@@ -23,19 +23,19 @@ let randomNumber = Math.floor((Math.random() * 5) + 1);
 const showFortune = () => {
     fortuneCardContainer.classList.remove('card__container--didplay-none');
     if (randomNumber === 1) {
-        userFortune.innerHTML = `${userName} ${fortuneOne}`;
+        userFortune.innerHTML = `${userName.value} ${fortuneOne}`;
     }
     if (randomNumber === 2) {
-        userFortune.innerHTML = `${userName} ${fortuneTwo}`;
+        userFortune.innerHTML = `${userName.value} ${fortuneTwo}`;
     }
     if (randomNumber === 3) {
-        userFortune.innerHTML = `${userName} ${fortuneThree}`;
+        userFortune.innerHTML = `${userName.value} ${fortuneThree}`;
     }
     if (randomNumber === 4) {
-        userFortune.innerHTML = `${userName} ${fortuneFour}`;
+        userFortune.innerHTML = `${userName.value} ${fortuneFour}`;
     }
     if (randomNumber === 5) {
-        userFortune.innerHTML = `${userName} ${fortuneFive}`;
+        userFortune.innerHTML = `${userName.value} ${fortuneFive}`;
     }
 };
 
