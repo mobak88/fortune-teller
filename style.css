@@ -60,9 +60,9 @@ header {
   align-items: center;
 }
 
-.user-name__container--hidden {
+/* .user-name__container--hidden {
   display: none;
-}
+} */
 
 .user-name__paragraph {
   font-size: 24px;
