@@ -28,19 +28,19 @@ const showFortune = () => {
         userFortune.innerHTML = `${userName.value} ${fortuneOne}`;
         card.style.backgroundColor = 'rgb(247, 225, 225)';
     }
-    if (randomNumber === 2) {
+    else if (randomNumber === 2) {
         userFortune.innerHTML = `${userName.value} ${fortuneTwo}`;
         card.style.backgroundColor = 'rgb(193, 250, 198)';
     }
-    if (randomNumber === 3) {
+    else if (randomNumber === 3) {
         userFortune.innerHTML = `${userName.value} ${fortuneThree}`;
         card.style.backgroundColor = 'rgb(182, 183, 196)';
     }
-    if (randomNumber === 4) {
+    else if (randomNumber === 4) {
         userFortune.innerHTML = `${userName.value} ${fortuneFour}`;
         card.style.backgroundColor = 'gb(145, 163, 221)';
     }
-    if (randomNumber === 5) {
+    else if (randomNumber === 5) {
         userFortune.innerHTML = `${userName.value} ${fortuneFive}`;
         card.style.backgroundColor = 'rgb(206, 145, 221)';
     }
